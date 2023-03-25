@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+* {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 100vw;
+    height: 100vh;
+    background: url(./nasa.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.btn{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #026b9c;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.btn:hover{
+    background-color:#0e425a;
+    transform: scale(1.1);
+}
+
+.generted-word{
+    transition: animation 1s ease-in;
+    animation: skew 1s alternate ease-in-out;
+}
+
+
+@keyframes spin {
+    to{
+        transform: rotate(360deg);
+        font-size: 0.2rem;
+    }
+}
+
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes changeColor1 {
+    5%{
+        transform: scale(2,3);
+        background-color: rgb(20, 202, 102);
+    }
+    25%
+    {
+        transform: rotate(530deg);
+        background-color: aqua;
+    }
+}
+
+@keyframes changeColor2 {
+    50%
+    {
+       transform: translate(1020px);
+       background-color: rgb(225, 0, 255);
+    }
+    75%
+    {
+        transform: scale(2,2);
+        background-color: rgb(202, 32, 20);
+    }
+}
+
+@keyframes changeColor3 {
+    90%
+    {
+        transform: translateY(80px);
+        background-color: rgb(28, 106, 196);
+    }
+    92%
+    { 
+        transform: translateX(80px);
+        background-color: rgb(221, 107, 13);
+    }
+}
+
+@keyframes changeColor4 {
+    94%
+    {
+        transform: translateY(80px);
+        background-color: rgb(218, 221, 13);
+    }
+    97%
+    {
+        transform: translate(200px);
+        background-color: rgb(8, 17, 2);
+    }
+}
+
+@media (max-width: 500px) {
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
